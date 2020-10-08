@@ -1,0 +1,9 @@
+<p>This is written by {{ Name | uppercase |  reverseStr }}</p>
+
+<input #f (keyup)="0">
+
+<p>DOLLAR TO PKR : {{f.value | cvtPkr }}</p>
+<p>LIST:</p>
+<div *ngfor="let animal of animals | idFly "> {{animal.cow}}</div>
+
+

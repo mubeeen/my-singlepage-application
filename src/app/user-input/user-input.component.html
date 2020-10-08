@@ -1,0 +1,27 @@
+<p>Binding to user input events</p>
+<button class="btn btn-success" (click)="OnBtnPress()">Press the button</button>
+<p>{{message}}</p>
+
+
+<p>Get user input from the $event object</p>
+<input (keyup)="onKey($event)">
+  <p>{{notification}}</p>
+
+<p>Another method to bind the event</p>
+<input #box (keyup)="0">
+<p>{{box.value}}</p>
+
+<p>Get direct value from # in the table</p>
+<input #box1 (keyup)="directVal(box1.value)">
+<p>{{dir}}</p>
+
+<p>Get value on Enter</p>
+<input #box2 (keyup.enter)="onEnter(box2.value)">
+<p>{{val2}}</p>
+
+<h5>Add Your Faveriout city name: </h5>
+<input #newCity (keyup.enter)="addCity(newCity.value)" (blur)="addCity(newCity.value); newCity.value = ''">
+<button (click)="addCity(newCity.value)">Add</button>
+<ul>
+    <li *ngFor="let city of cities">{{city}}</li>
+</ul>
