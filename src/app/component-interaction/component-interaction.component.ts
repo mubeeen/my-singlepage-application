@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { ComponentInteractionChildComponent } from '../component-interaction-child/component-interaction-child.component';
 
 @Component({
   selector: 'app-component-interaction',
@@ -10,6 +11,16 @@ export class ComponentInteractionComponent implements OnInit {
     {type: 'server', name: 'Test Server',content: 'Just a test'},
     {type: 'server', name: 'Mubeen',content: 'J-My server'}
   ];
+
+  names = ['Mubeen','Abrar','Uzair','Hamza'];
+  //there is a get and set method to interact with different components
+  @ViewChild('serverContentInput') serverContentInput: ElementRef;
+
+  testing()
+  {
+    console.log(this.serverContentInput);
+  }
+
   constructor() { }
 
   ngOnInit(): void {
