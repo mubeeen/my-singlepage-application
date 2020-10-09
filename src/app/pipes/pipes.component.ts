@@ -13,10 +13,15 @@ export class PipesComponent implements OnInit {
   constructor() { }
 
   animals = {
-   
+    cow: false,
+    crow: true,
+    tiger: false,
+    bee:true,
+    lion: false
   }
 
   ngOnInit(): void {
+    
   }
 
 }

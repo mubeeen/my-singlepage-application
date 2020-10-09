@@ -9,6 +9,9 @@ import { ReverseStrPipe } from './reverse-str.pipe';
 import { CvtPkrPipe } from './cvt-pkr.pipe';
 import { IdFlyPipe } from './id-fly.pipe';
 import { HooksComponent } from './hooks/hooks.component';
+import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
+import { ComponentInteractionChildComponent } from './component-interaction-child/component-interaction-child.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { HooksComponent } from './hooks/hooks.component';
     ReverseStrPipe,
     CvtPkrPipe,
     IdFlyPipe,
-    HooksComponent
+    HooksComponent,
+    ViewEncapsulationComponent,
+    ComponentInteractionComponent,
+    ComponentInteractionChildComponent
   ],
   imports: [
     BrowserModule,

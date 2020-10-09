@@ -6,10 +6,11 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class IdFlyPipe implements PipeTransform {
 
   transform(animals: any): any{
-    console.log(animals);
+    //console.log(animals);
 
-     if(animals.crow)
+    if(animals.values() == true)
     {
+      console.log("inside");
       console.log(animals);
       return animals;
     }
