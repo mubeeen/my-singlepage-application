@@ -14,12 +14,12 @@ export class ComponentInteractionComponent implements OnInit {
 
   names = ['Mubeen','Abrar','Uzair','Hamza'];
   //there is a get and set method to interact with different components
-  @ViewChild('serverContentInput') serverContentInput: ElementRef;
+  /*@ViewChild('serverContentInput') serverContentInput: ElementRef;
 
   testing()
   {
     console.log(this.serverContentInput);
-  }
+  }*/
 
   constructor() { }
 

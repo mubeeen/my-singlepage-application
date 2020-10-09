@@ -1,0 +1,7 @@
+<h1>This is Random number generator</h1>
+
+<button (click) = "generateRandomNumbers()">Generate Number</button>
+
+<ul *ngFor="let num of myArr" [ngStyle]="{'background-color':num % 2 !== 0 ? 'red' : 'green' }">
+    <li > {{num}} </li>
+</ul>

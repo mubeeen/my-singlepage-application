@@ -12,6 +12,7 @@ import { HooksComponent } from './hooks/hooks.component';
 import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulation.component';
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ComponentInteractionChildComponent } from './component-interaction-child/component-interaction-child.component';
+import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ComponentInteractionChildComponent } from './component-interaction-chil
     HooksComponent,
     ViewEncapsulationComponent,
     ComponentInteractionComponent,
-    ComponentInteractionChildComponent
+    ComponentInteractionChildComponent,
+    DynamicComponentComponent
   ],
   imports: [
     BrowserModule,

@@ -16,12 +16,12 @@ export class ComponentInteractionChildComponent implements OnInit {
     this._name = name;
   }
   private _name = '';*/
-  c1 = 'The C1 button is not pressed';
+  /*c1 = 'The C1 button is not pressed';
   child1()
   {
     this.c1 = 'The C1 button is pressed';
   }
-
+*/
   constructor() { }
 
   ngOnInit(): void {
