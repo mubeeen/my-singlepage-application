@@ -13,6 +13,7 @@ import { ViewEncapsulationComponent } from './view-encapsulation/view-encapsulat
 import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 import { ComponentInteractionChildComponent } from './component-interaction-child/component-interaction-child.component';
 import { DynamicComponentComponent } from './dynamic-component/dynamic-component.component';
+import { TemplateComponent } from './template/template.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DynamicComponentComponent } from './dynamic-component/dynamic-component
     ViewEncapsulationComponent,
     ComponentInteractionComponent,
     ComponentInteractionChildComponent,
-    DynamicComponentComponent
+    DynamicComponentComponent,
+    TemplateComponent
   ],
   imports: [
     BrowserModule,
