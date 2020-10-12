@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
 import { EleServiceService } from '../../ele-service.service';
 
 @Component({
@@ -11,8 +11,9 @@ export class MappingChildComponent implements OnInit, OnChanges {
   constructor(private service: EleServiceService) { 
     this.value = service.getvalue();
     console.log("child Componenet : ",this.value);
+    //@Input() childItem: String
   }
-  ngOnChanges()
+  ngOnChanges() 
   {
     console.log("child change");
   }

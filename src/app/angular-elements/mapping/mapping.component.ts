@@ -9,7 +9,7 @@ import { EleServiceService } from '../../ele-service.service';
 export class MappingComponent implements OnInit {
   value = "MyName is Parent";
   sampleString: string = "MyName is Parent";
-
+  parentVal = "lamp";
   constructor(private service: EleServiceService)
   {
     this.service.setvalue(this.sampleString);

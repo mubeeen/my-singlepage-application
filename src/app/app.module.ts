@@ -1,6 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { Inject, Injector, NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { UserInputComponent } from './user-input/user-input.component';
@@ -19,6 +18,8 @@ import { GreetComponent } from './angular-elements/greet/greet.component';
 import { createCustomElement } from '@angular/elements';
 import { MappingComponent } from './angular-elements/mapping/mapping.component';
 import { MappingChildComponent } from './angular-elements/mapping-child/mapping-child.component';
+import { PropertybindingComponent } from './propertybinding/propertybinding.component';
+import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,9 @@ import { MappingChildComponent } from './angular-elements/mapping-child/mapping-
     ElementsComponent,
     GreetComponent,
     MappingComponent,
-    MappingChildComponent
+    MappingChildComponent,
+    PropertybindingComponent,
+    TwowaybindingComponent
   ],
   imports: [
     BrowserModule,
