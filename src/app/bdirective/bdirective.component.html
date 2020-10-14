@@ -1,0 +1,5 @@
+<p>bdirective works!</p>
+<button (click) = "CreateServer()">Create server</button>
+
+<p *ngIf="IsServer; else noServer" [ngStyle]="{backgroundColor:getColor()}" [ngClass] = "{online: serverStatus === 'online'}">Server has been created, Server is {{serverStatus}}</p>
+<ng-template #noServer><p>No Server is created!</p></ng-template>

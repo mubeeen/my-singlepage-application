@@ -20,6 +20,7 @@ import { MappingComponent } from './angular-elements/mapping/mapping.component';
 import { MappingChildComponent } from './angular-elements/mapping-child/mapping-child.component';
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
+import { BdirectiveComponent } from './bdirective/bdirective.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component'
     MappingComponent,
     MappingChildComponent,
     PropertybindingComponent,
-    TwowaybindingComponent
+    TwowaybindingComponent,
+    BdirectiveComponent
   ],
   imports: [
     BrowserModule,
