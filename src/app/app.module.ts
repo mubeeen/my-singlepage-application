@@ -21,6 +21,8 @@ import { MappingChildComponent } from './angular-elements/mapping-child/mapping-
 import { PropertybindingComponent } from './propertybinding/propertybinding.component';
 import { TwowaybindingComponent } from './twowaybinding/twowaybinding.component';
 import { BdirectiveComponent } from './bdirective/bdirective.component';
+import { HighlightDirective } from './highlight.directive';
+import { BetterhighlightDirective } from './betterhighlight.directive';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { BdirectiveComponent } from './bdirective/bdirective.component';
     MappingChildComponent,
     PropertybindingComponent,
     TwowaybindingComponent,
-    BdirectiveComponent
+    BdirectiveComponent,
+    HighlightDirective,
+    BetterhighlightDirective
   ],
   imports: [
     BrowserModule,

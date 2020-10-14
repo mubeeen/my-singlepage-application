@@ -17,6 +17,7 @@ export class BdirectiveComponent implements OnInit {
 
   IsServer = false;
   serverStatus: string;
+  value = 65;
 
   constructor() { 
     this.serverStatus = Math.random() > 0.5 ? 'online' : 'offline';

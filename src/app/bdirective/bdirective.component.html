@@ -3,3 +3,16 @@
 
 <p *ngIf="IsServer; else noServer" [ngStyle]="{backgroundColor:getColor()}" [ngClass] = "{online: serverStatus === 'online'}">Server has been created, Server is {{serverStatus}}</p>
 <ng-template #noServer><p>No Server is created!</p></ng-template>
+
+<!--Custom Attribute directive-->
+
+<p appHighlight>Style me with basic directive</p>
+
+<p appBetterhighlight [highlightColor] = "'green'" >I am better directive, using render DOM</p>
+
+<div [ngSwitch] = "value">
+    <p *ngSwitchCase="5">Value is 5</p>
+    <p *ngSwitchCase="15">Value is 15</p>
+    <p *ngSwitchCase="65">Value is 65</p>
+    <p *ngSwitchDefault>Value is default</p>
+</div>
